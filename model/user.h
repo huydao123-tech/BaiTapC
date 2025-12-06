@@ -8,11 +8,11 @@ typedef struct {
 } User;
 
 User* createUser(const char* name, int id);
-void freeBook(User* user);
+void freeUser(User* user);
 
 // GETTER
-const char getUserName(const User* user);
-const char getUserId(const User* user);
+const char* getUserName(const User* user);
+int getUserId(const User* user);
 int getBooksBorrowing(const User* user);
 void setBookBorrowing(User* user, int );
 #endif

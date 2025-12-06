@@ -1,4 +1,6 @@
 #include "user.h"
+#include <string.h>
+#include <stdlib.h>
 
 User* createUser(const char* name, int id) {
     User* user = (User*) malloc(sizeof(User));
@@ -7,11 +9,13 @@ User* createUser(const char* name, int id) {
     return user;
 
 }
-
-const char getUserName(const User* user){
+void freeUser(User* user) {
+    free(user);
+}
+const char* getUserName(const User* user){
     return user->name;
 }
-const char getUserId(const User* user){
+int getUserId(const User* user){
     return user->userId;
 }
 int getBooksBorrowing(const User* user){

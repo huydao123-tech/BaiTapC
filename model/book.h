@@ -12,8 +12,8 @@ Book* createBook(const char* title, const char* author, int id);
 void freeBook(Book* book);
 
 // GETTER
-const char getBookTitle(const Book* book);
-const char getBookAuthor(const Book* book);
+const char* getBookTitle(const Book* book);
+const char* getBookAuthor(const Book* book);
 int getBookId(const Book* book);
 char* isBookAvailable(const Book* book);
 void setBookAvailability(Book* book, int availability);

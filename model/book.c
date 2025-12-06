@@ -1,4 +1,6 @@
 #include "book.h"
+#include <string.h>
+#include <stdlib.h>
 
 Book* createBook(const char* title, const char* author, int id) {
     Book* book = (Book*)malloc(sizeof(Book));
@@ -13,10 +15,10 @@ void freeBook(Book* b){
     free(b);
 }
 
-const char getBookTitle(const Book* book){
+const char* getBookTitle(const Book* book){
     return book->title;
 }
-const char getBookAuthor(const Book* book){
+const char* getBookAuthor(const Book* book){
     return book->author;
 }
 int getBookId(const Book* book) {

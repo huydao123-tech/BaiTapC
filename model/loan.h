@@ -4,6 +4,7 @@
 typedef struct {
     int userId;
     int bookId;
+    int loanId;
 } Loan;
 
 
