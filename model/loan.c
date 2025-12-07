@@ -5,14 +5,13 @@ Loan* createLoan(int userId,int bookId){
     Loan* loan = (Loan*)malloc(sizeof(Loan));
     loan->userId = userId;
     loan->bookId = bookId;
-    loan->loanId = 0; // Will be set by repository
+    loan->loanId = 0; 
     return loan;
 }
 void freeLoan(Loan* loan){
     free(loan);
 }
 
-// GETTER
 const int getLoanBookId(Loan loan){
     return loan.bookId;
 }

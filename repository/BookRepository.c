@@ -16,6 +16,7 @@ int bookExisted(BookRepository* repo, Book* book)
     }
     return 0;
 }
+
 RepoStatus repo_addBook(BookRepository* repo, Book* book)
 {
     if(repo->count >= MAX_BOOK){

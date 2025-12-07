@@ -10,6 +10,8 @@ void BookController_init(BookController* ctl, BookRepository* repo);
 
 void ctl_addBook(BookController* ctl, Book* book);
 
+Book* ctl_createAndAddBook(BookController* ctl);
+
 void ctl_deleteBook(BookController* ctl, int bookId);
 
 Book* ctl_findBook(BookController* ctl, int bookId);
